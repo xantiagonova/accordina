@@ -61,12 +61,43 @@ section{padding:82px 0}.section-title{font-size:42px;letter-spacing:-.04em;margi
 .language-switch button{border:0;background:transparent;color:#aaa;font:inherit;font-size:.75rem;font-weight:700;letter-spacing:.04em;padding:6px 9px;border-radius:999px;cursor:pointer}
 .language-switch button.active{background:#d4af37;color:#111}
 @media(max-width:720px){.language-switch{margin-left:auto}.lang-label{display:none}.language-switch button{padding:6px 7px}}
+
+/* ZENIZZO LUXURY VISUAL LAYER — presentation only; content unchanged */
+:root{
+  --bg:#070708;--surface:#101012;--surface2:#151518;--text:#f7f3ea;--muted:#aaa59d;
+  --gold:#c9a45c;--gold2:#f2d89c;--line:rgba(201,164,92,.18);--line-soft:rgba(255,255,255,.08);
+}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#070708}
+#app{background:
+  radial-gradient(circle at 85% 5%,rgba(201,164,92,.09),transparent 24rem),
+  radial-gradient(circle at 10% 38%,rgba(201,164,92,.035),transparent 28rem),
+  linear-gradient(180deg,#070708 0%,#0a0a0b 48%,#070708 100%)}
+nav{background:rgba(7,7,8,.72);border-bottom:1px solid rgba(201,164,92,.16);box-shadow:0 12px 35px rgba(0,0,0,.22)}
+.navin{height:76px}.brand{font-size:15px;letter-spacing:.28em;text-shadow:0 0 22px rgba(201,164,92,.18)}
+.navlinks{gap:28px}.navlinks a{position:relative;transition:color .25s ease}.navlinks a:after{content:"";position:absolute;left:0;right:100%;bottom:-9px;height:1px;background:var(--gold);transition:right .25s ease}.navlinks a:hover:after{right:0}
+.hero{padding:112px 0 96px}.hero:before{width:720px;height:720px;right:-260px;top:-260px;background:radial-gradient(circle,rgba(201,164,92,.13),rgba(201,164,92,.035) 30%,transparent 68%);filter:blur(2px)}
+.eyebrow{font-size:11px;letter-spacing:.3em;color:#d7b875}.hero h1,.section-title,.cta h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.045em}.hero h1{font-size:clamp(54px,7vw,92px);line-height:.94}.hero h1 span{color:var(--gold2);text-shadow:0 0 35px rgba(201,164,92,.12)}
+.hero p,.section-sub{color:#b8b2a9}.hero p{font-size:19px;max-width:680px}
+.btn{padding:15px 23px;border-radius:4px;letter-spacing:.02em;border-color:rgba(201,164,92,.25);transition:transform .25s,box-shadow .25s,background .25s}.btn.primary{background:linear-gradient(135deg,#e2c27c,#b88d43);box-shadow:0 12px 32px rgba(201,164,92,.16);border-color:#d3ae68}.btn.primary:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(201,164,92,.23)}.btn.ghost{background:rgba(255,255,255,.015)}
+.instrument{min-height:470px}.accordina{width:350px;height:242px;border-radius:28px;background:linear-gradient(145deg,#29272a 0%,#111113 58%,#080809 100%);border:1px solid rgba(201,164,92,.48);box-shadow:0 45px 90px rgba(0,0,0,.62),0 0 55px rgba(201,164,92,.06),inset 0 0 0 7px #141416}.accordina:before{inset:17px;border:1px solid rgba(215,184,117,.34)}.accordina .logo{color:#d9b86e;text-shadow:0 0 18px rgba(201,164,92,.25)}
+.note{background:rgba(16,14,12,.9);border-color:rgba(201,164,92,.35);box-shadow:0 15px 35px rgba(0,0,0,.3);backdrop-filter:blur(10px)}
+section{padding:96px 0}.section-title{font-size:46px}.cards{gap:18px}.card,.price-card{background:linear-gradient(145deg,rgba(23,23,26,.96),rgba(13,13,15,.96));border:1px solid rgba(255,255,255,.075);box-shadow:0 18px 45px rgba(0,0,0,.22);transition:transform .3s,border-color .3s,box-shadow .3s}.card:hover,.price-card:hover{transform:translateY(-5px);border-color:rgba(201,164,92,.34);box-shadow:0 24px 55px rgba(0,0,0,.34)}.card{border-radius:16px}.card .icon{color:var(--gold2)}
+.dark{background:linear-gradient(180deg,#0b0b0d,#09090a);border-color:rgba(201,164,92,.09)}
+.price{background:linear-gradient(125deg,#18140f,#0e0e10 62%);border:1px solid rgba(201,164,92,.28);box-shadow:0 25px 60px rgba(0,0,0,.3);border-radius:20px}.price strong,.price-card strong{color:var(--gold2);text-shadow:0 0 24px rgba(201,164,92,.1)}
+.pill{border-color:rgba(201,164,92,.3);background:rgba(201,164,92,.035)}.price-card.featured{border-color:rgba(201,164,92,.65);box-shadow:0 20px 60px rgba(201,164,92,.07)}
+.spec{border-bottom-color:rgba(255,255,255,.075)}
+.faq button{border-bottom-color:rgba(255,255,255,.075);transition:color .2s}.faq button:hover{color:var(--gold2)}
+.cta{position:relative;overflow:hidden}.cta:before{content:"";position:absolute;width:560px;height:260px;left:50%;top:20%;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(201,164,92,.08),transparent 68%);pointer-events:none}.cta h2{position:relative}.cta p,.cta .buttons{position:relative}
+.footer{border-top-color:rgba(201,164,92,.12)}.social a{transition:color .2s}
+@media(max-width:800px){.hero{padding:70px 0 65px}.section-title{font-size:39px}.instrument{min-height:330px}.accordina{width:330px;height:228px}}
+@media(max-width:480px){.navin{height:64px}.brand{letter-spacing:.2em}.hero{padding-top:48px}.hero h1{font-size:clamp(42px,12vw,55px)}.section-title{font-size:33px}.card,.price-card{box-shadow:0 12px 32px rgba(0,0,0,.22)}}
+
 </style>
 </head>
 <body>
 <div id="app">
 <nav><div class="wrap navin"><div class="brand">ZENIZZO</div><div class="navlinks"><a href="#instrumento">Instrumento</a><a href="#detalles">Detalles</a><a href="#precio">Precio</a><a href="#contacto">Contacto</a></div><div class="language-switch" aria-label="Selector de idioma"><span class="lang-label">Idioma</span><button type="button" data-lang="es" class="active" aria-label="Español" onclick="window.setZenizzoLanguage('es')"><span aria-hidden="true">🇪🇸</span> ES</button><button type="button" data-lang="en" aria-label="English" onclick="window.setZenizzoLanguage('en')"><span aria-hidden="true">🇺🇸</span> EN</button></div></div></nav>
-<header class="hero"><div class="wrap grid"><div><div class="eyebrow">Accordina cromática · Hecha a mano</div><h1>Pequeña en tamaño.<br><span>Grande en música.</span></h1><p>La Accordina ZENIZZO, marca 100% colombiana, nace para músicos que quieren llevar una experiencia cromática completa a cualquier lugar: ligera, elegante, personalizable y construida con el carácter artesanal de nuestro Taller Zenizzo.</p><div class="buttons"><a class="btn primary" href="#precio">Ver propuesta</a><a class="btn ghost" href="https://wa.me/573016761598" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a></div></div></div></header>
+<header class="hero"><div class="wrap grid"><div><div class="eyebrow">Accordina cromática · Hecha a mano</div><h1>Pequeña en tamaño.<br><span>Grande en música.</span></h1><p>La Accordina ZENIZZO, marca 100% colombiana, nace para músicos que quieren llevar una experiencia cromática completa a cualquier lugar: ligera, elegante, personalizable y construida con el carácter artesanal de nuestro Taller Zenizzo.</p><div class="buttons"><a class="btn primary" href="#precio">Ver propuesta</a></div></div></div></header>
 <section id="instrumento"><div class="wrap"><div class="eyebrow">Una nueva forma de llevar la melodía</div><h2 class="section-title">Tu música, sin cargar de más.</h2><p class="section-sub">La accordina es un instrumento cromático de botones diseñado para concentrar un amplio rango melódico en un formato compacto. No busca reemplazar al acordeón: cada instrumento tiene su propia personalidad y propósito interpretativo.</p><div class="cards"><article class="card"><div class="icon">◈</div><h3>36 / 44 notas cromáticas</h3><p>Configuración cromática para tocar melodías con precisión en un formato pequeño y portátil.</p></article><article class="card"><div class="icon">◌</div><h3>Sistema C o B</h3><p>Elige la distribución que mejor se adapte a tu técnica y forma de tocar.</p></article><article class="card"><div class="icon">✦</div><h3>Personalizada</h3><p>Tu instrumento puede llevar acabados y detalles pensados especialmente para ti.</p></article></div></div></section>
 <section>
 <div class="wrap">
