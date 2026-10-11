@@ -117,6 +117,15 @@ html{scroll-padding-top:120px}img,video,iframe{max-width:100%}.grid{grid-templat
 @media(max-width:960px){.navin{height:auto;min-height:72px;padding:10px 0;flex-wrap:wrap;gap:8px 16px}.navlinks{display:flex;order:3;width:100%;gap:6px 24px}.language-switch{margin-left:auto}.hero .grid{grid-template-columns:minmax(0,1fr);gap:28px}.hero .grid>div:first-child{max-width:680px;justify-self:center}.hero h1{font-size:clamp(38px,8vw,68px)}.z-slider{max-width:400px}.hero{min-height:0;padding:40px 0 28px}.cards{grid-template-columns:1fr}.proposal-grid{grid-template-columns:1fr}.price-card{max-width:660px;width:100%;margin-inline:auto}}
 @media(max-width:480px){.navlinks{font-size:11px;gap:4px 16px}.brand-logo img{height:32px;max-width:125px}.hero h1{font-size:clamp(32px,10vw,46px)}.hero .grid>div:first-child{padding:20px 16px}.hero p{font-size:16px}.z-slider{width:100%;max-width:340px}section{padding:56px 0}.catalog-entry .btn{width:100%;font-size:11px}.accordina-video-cta{margin-top:24px}.footerin{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;family=Oswald:wght@500;600&amp;display=swap">
+<style>
+.footer{padding:40px 20px 48px;text-align:center;background:rgba(5,5,6,.92);border-top:1px solid rgba(201,164,92,.14)}
+.footer-brand-link{display:inline-flex;flex-direction:column;align-items:center;gap:16px;max-width:100%;text-decoration:none;font-family:'Montserrat',sans-serif}
+.footer-brand-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:28px;line-height:1.4;letter-spacing:.12em;color:#b7a363;transition:color .25s}
+.footer-brand-tagline{font-size:18px;line-height:1.7;font-weight:500;color:#b8b5af}
+.footer-copyright{font-size:14px;line-height:1.6;color:#85817a}
+.footer-brand-link:hover .footer-brand-name{color:#fff}.footer-brand-link:focus-visible{outline:2px solid #b7a363;outline-offset:8px;border-radius:6px}
+@media(max-width:600px){.footer{padding:34px 20px 40px}.footer-brand-name{font-size:24px}.footer-brand-tagline{font-size:15px;max-width:400px}.footer-copyright{font-size:12px}.footer-brand-link{gap:14px}}
 </style></head>
 <body>
 <div id="app">
@@ -153,7 +162,7 @@ html{scroll-padding-top:120px}img,video,iframe{max-width:100%}.grid{grid-templat
 
 
 <section class="cta" id="contacto"><div class="wrap"><div class="eyebrow">ZENIZZO · Accordina</div><h2>Lleva tu música contigo.</h2><p>Cuéntanos cómo imaginas tu instrumento y construyamos una Accordina que tenga tu identidad.</p><div class="buttons" style="justify-content:center;flex-wrap:wrap"><a class="btn primary" href="https://wa.me/573016761598" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="btn ghost" href="https://www.instagram.com/santiagoruiz_ac" target="_blank" rel="noopener noreferrer">Instagram</a><a class="btn ghost" href="https://www.facebook.com/eddiesantiago.ruizgomez/" target="_blank" rel="noopener noreferrer">Facebook</a></div></div></section>
-<footer class="footer"><div class="wrap footerin"><div>© ZENIZZO · Acordeones e instrumentos artesanales</div><div class="social"><a href="https://zenizzo.onrender.com" target="_blank" rel="noopener noreferrer">zenizzo.onrender.com</a><a href="https://www.facebook.com/eddiesantiago.ruizgomez/" target="_blank" rel="noopener noreferrer">Facebook</a></div></div></footer>
+<footer class="footer"><a class="footer-brand-link" href="https://zenizzo.onrender.com/" aria-label="Ir al inicio de ZENIZZO"><span class="footer-brand-name">ZENIZZO ACCORDIONS</span><span class="footer-brand-tagline">Artesanía colombiana. Diseño a tu medida. Sonido con identidad.</span><span class="footer-copyright">&copy; 2026 ZENIZZO Accordions. Todos los derechos reservados.</span></a></footer>
 </div>
 <script>
 (function(){
@@ -240,7 +249,9 @@ html{scroll-padding-top:120px}img,video,iframe{max-width:100%}.grid{grid-templat
       const made=q('#hecha-en-colombia');if(made){textIn(made,'.eyebrow',t.made);textIn(made,'.section-title',t.madeH);textIn(made,'.section-sub',t.madeP);}
       const faq=q('.faq');if(faq){textIn(faq,'.eyebrow',t.faq);textIn(faq,'.section-title',t.faqH);faq.querySelectorAll('.faq-item').forEach((item,i)=>{textIn(item,'button',t.faqQ[i]);textIn(item,'.answer',t.faqA[i]);});}
       const cta=q('.cta');if(cta){textIn(cta,'h2',t.ctaH);textIn(cta,'p',t.ctaP);const bs=cta.querySelectorAll('.btn');if(bs[0])bs[0].textContent=t.whatsapp;if(bs[1])bs[1].textContent=t.instagram;if(bs[2])bs[2].textContent=t.facebook;}
-      const footer=q('.footer');if(footer){const f=footer.querySelector('.footerin > div');if(f)f.textContent='© ZENIZZO · '+t.footer;}
+      text('.footer-brand-tagline',lang==='en'?'Colombian craftsmanship. Tailored design. Sound with identity.':'Artesanía colombiana. Diseño a tu medida. Sonido con identidad.');
+      text('.footer-copyright',lang==='en'?'© 2026 ZENIZZO Accordions. All rights reserved.':'© 2026 ZENIZZO Accordions. Todos los derechos reservados.');
+      const footerLink=q('.footer-brand-link');if(footerLink)footerLink.setAttribute('aria-label',lang==='en'?'Go to ZENIZZO home':'Ir al inicio de ZENIZZO');
 
       document.documentElement.lang=lang;
       document.title=lang==='en'?'ZENIZZO Chromatic Accordina | 36 & 44 Notes | Colombia':'Accordina Cromática ZENIZZO | 36 y 44 Notas | Colombia';
