@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <title>Gracias por tu pedido | ZENIZZO</title>
-<meta name="description" content="Gracias por tu pedido. ZENIZZO ha recibido tu pago y se pondrá en contacto contigo para confirmar los detalles de tu Accordina.">
+<meta name="description" content="Gracias por tu pedido. Hemos recibido tu pago. Contáctanos por WhatsApp para confirmar los detalles de tu Accordina.">
 <meta name="theme-color" content="#0a0a0b">
 <style>
 :root{--bg:#0a0a0b;--surface:#111114;--text:#f5f3ef;--muted:#b5b0a8;--gold:#d7ad63;--gold2:#f0d49a;--line:#2b2927}
@@ -13,24 +13,35 @@
 .page{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:max(20px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}.card{width:100%;max-width:680px;text-align:center;background:rgba(17,17,20,.92);border:1px solid rgba(215,173,99,.32);border-radius:28px;padding:58px 34px 46px;box-shadow:0 30px 80px rgba(0,0,0,.45);position:relative;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .check{width:78px;height:78px;margin:0 auto 28px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(215,173,99,.65);color:var(--gold2);font-size:38px;animation:appear .7s ease both}.eyebrow{width:100%;color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px}h1{margin:0 auto 18px;max-width:580px;font-size:clamp(32px,6vw,54px);line-height:1.05;letter-spacing:-.035em}h1 span{color:var(--gold2)}.lead{max-width:520px;margin:0 auto;color:var(--muted);font-size:clamp(16px,2.5vw,19px);line-height:1.7}.highlight{color:var(--text);font-weight:700}
 .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}.btn:hover{transform:translateY(-2px)}.primary{color:#0a0a0b;background:linear-gradient(135deg,var(--gold2),var(--gold));box-shadow:0 12px 30px rgba(215,173,99,.18)}.secondary{color:var(--text);border:1px solid var(--line);background:#17171b}.note{margin:32px auto 0;padding-top:22px;border-top:1px solid var(--line);color:#8f8b84;font-size:13px;line-height:1.6}.brand{margin-top:34px;color:var(--gold);font-size:13px;font-weight:800;letter-spacing:.28em}@keyframes appear{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
-@media(max-width:520px){.page{padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right))}.card{padding:38px 18px 30px;border-radius:22px}.check{width:64px;height:64px;font-size:30px;margin-bottom:22px}.eyebrow{margin-bottom:16px}.eyebrow img{width:min(190px,72vw)!important}.actions{flex-direction:column;margin-top:28px}.btn{width:100%;min-height:52px;padding:0 18px}.note{margin-top:26px;padding-top:18px;font-size:12px}.brand{margin-top:28px}}
+@media(max-width:520px){.page{padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right))}.card{padding:38px 18px 30px;border-radius:22px}.check{width:64px;height:64px;font-size:30px;margin-bottom:22px}.eyebrow{margin-bottom:16px}.eyebrow img{width:min(250px,100%)!important}.actions{flex-direction:column;margin-top:28px}.btn{width:100%;min-height:52px;padding:0 18px}.note{margin-top:26px;padding-top:18px;font-size:12px}.brand{margin-top:28px}}
 @media(max-width:360px){.page{padding-left:10px;padding-right:10px}.card{padding:32px 15px 26px}.lead{font-size:15px;line-height:1.6}h1{font-size:30px}.btn{font-size:13px}.brand{font-size:11px}}
 @media(hover:none){.btn:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){.check{animation:none}.btn{transition:none}}
 </style>
-</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;family=Oswald:wght@500;600&amp;display=swap">
+<style>
+.footer{padding:40px 20px 48px;text-align:center;background:rgba(5,5,6,.92);border-top:1px solid rgba(201,164,92,.14)}
+.footer-brand-link{display:inline-flex;flex-direction:column;align-items:center;gap:16px;max-width:100%;text-decoration:none;font-family:'Montserrat',sans-serif}
+.footer-brand-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:28px;line-height:1.4;letter-spacing:.12em;color:#b7a363;transition:color .25s}
+.footer-brand-tagline{font-size:18px;line-height:1.7;font-weight:500;color:#b8b5af}
+.footer-copyright{font-size:14px;line-height:1.6;color:#85817a}
+.footer-brand-link:hover .footer-brand-name{color:#fff}.footer-brand-link:focus-visible{outline:2px solid #b7a363;outline-offset:8px;border-radius:6px}
+@media(max-width:600px){.footer{padding:34px 20px 40px}.footer-brand-name{font-size:24px}.footer-brand-tagline{font-size:15px;max-width:400px}.footer-copyright{font-size:12px}.footer-brand-link{gap:14px}}
+</style><style>
+body{background:#090909;isolation:isolate;overflow-x:visible}body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(5,5,7,.48),rgba(5,5,7,.68)),url('https://raw.githubusercontent.com/xantiagonova/zenizzo/refs/heads/main/fondozenizzo.png') center/cover no-repeat;pointer-events:none}.page{min-height:100vh;min-height:100svh}.card{padding:clamp(28px,5vw,48px) clamp(16px,4vw,34px) 0;background:rgba(12,12,15,.95);min-width:0;max-width:720px}.eyebrow img{max-width:100%;height:auto}.actions{align-items:stretch}.btn{padding:14px 22px;line-height:1.5;white-space:normal;overflow-wrap:anywhere}h1{font-size:clamp(30px,6vw,50px);line-height:1.12;overflow-wrap:break-word}.lead,.note{overflow-wrap:break-word}.card .footer{margin-top:30px;padding:28px 0 30px;background:transparent}.card .footer-brand-name{font-size:25px}.card .footer-brand-tagline{font-size:15px}.card .footer-copyright{font-size:12px}.footer-brand-link{width:100%}.btn:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}@media(max-width:520px){.card .footer-brand-name{font-size:23px}.card .footer-brand-tagline{font-size:14px}.card .footer-copyright{font-size:11px}.card .footer{padding:24px 0}.actions{gap:10px}.page{padding-top:18px;padding-bottom:18px}}
+</style></head>
 <body>
 <main class="page"><section class="card" aria-labelledby="thanks-title">
 <div class="check" aria-hidden="true">✓</div>
-<div class="eyebrow"><img src="https://ik.imagekit.io/fbrbttqus/IMG_2827.png" alt="ZENIZZO" style="display:block;width:min(220px,78vw);max-width:100%;height:auto;margin:0 auto;"></div>
-<h1 id="thanks-title">¡Gracias por tu pedido! <span>🎶</span></h1>
-<p class="lead">Hemos recibido tu pago. <span class="highlight">ZENIZZO</span> se pondrá en contacto contigo para confirmar los detalles de tu Accordina.</p>
+<div class="eyebrow"><img src="https://ik.imagekit.io/fbrbttqus/IMG_2827.png" alt="ZENIZZO" style="display:block;width:min(300px,100%);max-width:100%;height:auto;margin:0 auto;"></div>
+<h1 id="thanks-title">¡Gracias por tu pedido!</h1>
+<p class="lead">Hemos recibido tu pago. <span class="highlight">Contáctanos por WhatsApp</span> para confirmar los detalles de tu Accordina.</p>
 <div class="actions">
-<a class="btn primary" href="index.html">← Volver al Inicio</a>
+<a class="btn primary" href="https://zenizzo.onrender.com/">← Volver al Inicio</a>
 <a class="btn secondary" href="https://wa.me/573016761598?text=Hola%20ZENIZZO%2C%20acabo%20de%20realizar%20un%20pedido%20de%20mi%20Accordina%20y%20quiero%20confirmar%20los%20detalles." target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
 </div>
 <p class="note">Tu pedido queda sujeto a la confirmación de los detalles de fabricación, personalización y entrega. Gracias por confiar en el trabajo artesanal de Taller Zenizzo.</p>
-<div class="brand">ZENIZZO</div>
+<footer class="footer"><a class="footer-brand-link" href="https://zenizzo.onrender.com/" aria-label="Ir al inicio de ZENIZZO"><span class="footer-brand-name">ZENIZZO ACCORDIONS</span><span class="footer-brand-tagline">Artesanía colombiana. Diseño a tu medida. Sonido con identidad.</span><span class="footer-copyright">&copy; 2026 ZENIZZO Accordions. Todos los derechos reservados.</span></a></footer>
 </section></main>
 </body>
 </html>
